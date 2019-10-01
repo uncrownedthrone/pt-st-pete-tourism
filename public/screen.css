@@ -16,14 +16,24 @@ header {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+}
+
+header nav {
+	background-color: #ffe066;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 header ul {
 	margin: 0;
 	background-color: #ffe066;
+	display: flex;
+	align-items: baseline;
+	justify-content: flex-end;
 	list-style: none;
 	padding-left: 0;
-	text-align: right;
 	padding: 5px;
 }
 
@@ -38,8 +48,9 @@ header li a {
 	text-decoration: none;
 }
 
-header nav {
-	background-color: red;
+header li h2 {
+	margin-right: 50px;
+	background-color: #247ba0;
 }
 
 .hero {
@@ -48,6 +59,7 @@ header nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .card {
@@ -75,4 +87,15 @@ header nav {
 
 .card .content p {
 	margin-bottom: 0;
+}
+
+h2 {
+	text-align: center;
+}
+
+#top-destinations {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
 }
