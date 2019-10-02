@@ -28,7 +28,6 @@ header nav {
 
 header ul {
 	margin: 0;
-	background-color: #ffe066;
 	display: flex;
 	align-items: baseline;
 	justify-content: flex-end;
@@ -48,18 +47,28 @@ header li a {
 	text-decoration: none;
 }
 
-header li h2 {
-	margin-right: 50px;
-	background-color: #247ba0;
+h2 {
+	text-align: center;
 }
 
 .hero {
 	flex: 1;
 	background-color: pink;
+	background-image: url('/public/images/beach-drive.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.hero h1 {
+	background: linear-gradient(rgba(255, 224, 102, 0.5), rgba(242, 92, 90, 0.5));
+	color: #247ba0;
+	padding: 2rem;
+	width: 100%;
 }
 
 .card {
@@ -86,11 +95,8 @@ header li h2 {
 }
 
 .card .content p {
+	margin-top: 10px;
 	margin-bottom: 0;
-}
-
-h2 {
-	text-align: center;
 }
 
 #top-destinations {
@@ -98,4 +104,37 @@ h2 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+#personality {
+	background-image: linear-gradient(
+			rgba(36, 123, 160, 0.5),
+			rgba(242, 92, 90, 0.5)
+		),
+		url('https://sdg-tourism.netlify.com/images/city.jpg');
+	background-size: cover;
+	color: #ffe066;
+	padding: 20px;
+}
+
+#personality p {
+	text-align: center;
+	margin: 10px;
+	font-weight: 600;
+}
+
+@media (min-width: 720px) {
+	.card {
+		display: flex;
+		align-items: center;
+	}
+
+	.card img {
+		flex: 1;
+		max-width: 300px;
+	}
+
+	.card .hero {
+		flex: 2;
+	}
 }
